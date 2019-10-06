@@ -3,8 +3,9 @@ var path = require('path');
 var vows = require('vows-si');
 var _ = require('lodash');
 var au = require('./../auto-update');
-
+// checking for pre requisites
 var suite = vows.describe('NPM Auto Update - stand alone methods');
+// integrating the functions for adding the Batch
 suite.addBatch({
   'npm name validation': {
     topic: ['floatthead', '../evil'],
